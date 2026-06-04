@@ -2,6 +2,7 @@ package com.greenmart.app.config;
 
 import java.util.Arrays;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -26,6 +27,9 @@ import com.greenmart.app.services.AuthenticationService;
 
 @Configuration
 public class SecurityConfig {
+	@Value("${app.cors.allowed-origins:http://localhost:5173}")
+	private String allowedOrigins;
+
 
 	@Bean
 	public JwtAuthenticationFilter jwtAuthenticationFilter(AuthenticationService authenticationService) {
@@ -114,7 +118,7 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         // Use Arrays.asList to create a List<String>
-        config.setAllowedOrigins(Arrays.asList("http://localhost:5173"));
+        config.setAllowedOrigins(Arrays.stream(allowedOrigins.split(",")).map(String::trim).toList());
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
         
