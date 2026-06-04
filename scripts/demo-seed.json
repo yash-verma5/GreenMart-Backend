@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "name": "Demo Admin",
+      "email": "admin@greenmart.demo",
+      "password": "Admin@123",
+      "address": "Pune",
+      "phoneNumber": "9999999991",
+      "role": "ADMIN"
+    },
+    {
+      "name": "Fresh Farm Vendor",
+      "email": "vendor@greenmart.demo",
+      "password": "Vendor@123",
+      "address": "Nashik",
+      "phoneNumber": "9999999992",
+      "role": "VENDOR"
+    },
+    {
+      "name": "Demo Customer",
+      "email": "customer@greenmart.demo",
+      "password": "Customer@123",
+      "address": "Mumbai",
+      "phoneNumber": "9999999993",
+      "role": "CUSTOMER"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Leafy Vegetables",
+      "description": "Fresh spinach, coriander, lettuce and other greens.",
+      "imagePath": "https://images.unsplash.com/photo-1576045057995-568f588f82fb"
+    },
+    {
+      "name": "Root Vegetables",
+      "description": "Farm-fresh carrots, potatoes, beetroot and radish.",
+      "imagePath": "https://images.unsplash.com/photo-1518977676601-b53f82aba655"
+    },
+    {
+      "name": "Seasonal Vegetables",
+      "description": "Daily seasonal picks from local farms.",
+      "imagePath": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+    }
+  ],
+  "products": [
+    {
+      "name": "Fresh Spinach",
+      "vendorEmail": "vendor@greenmart.demo",
+      "categoryName": "Leafy Vegetables",
+      "description": "Locally grown spinach bunch, cleaned and packed.",
+      "price": 35,
+      "quantity": 50,
+      "imagePath": "https://images.unsplash.com/photo-1576045057995-568f588f82fb",
+      "status": "APPROVED"
+    },
+    {
+      "name": "Organic Carrots",
+      "vendorEmail": "vendor@greenmart.demo",
+      "categoryName": "Root Vegetables",
+      "description": "Crunchy orange carrots grown without synthetic pesticides.",
+      "price": 60,
+      "quantity": 40,
+      "imagePath": "https://images.unsplash.com/photo-1445282768818-728615cc910a",
+      "status": "APPROVED"
+    },
+    {
+      "name": "Fresh Tomatoes",
+      "vendorEmail": "vendor@greenmart.demo",
+      "categoryName": "Seasonal Vegetables",
+      "description": "Juicy red tomatoes suitable for salads and cooking.",
+      "price": 45,
+      "quantity": 80,
+      "imagePath": "https://images.unsplash.com/photo-1546470427-e26264be0b0d",
+      "status": "APPROVED"
+    },
+    {
+      "name": "Green Capsicum",
+      "vendorEmail": "vendor@greenmart.demo",
+      "categoryName": "Seasonal Vegetables",
+      "description": "Crisp green capsicum from local farms.",
+      "price": 75,
+      "quantity": 30,
+      "imagePath": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83",
+      "status": "PENDING"
+    }
+  ],
+  "reviews": [
+    {
+      "customerEmail": "customer@greenmart.demo",
+      "productName": "Fresh Spinach",
+      "rating": 5,
+      "comment": "Very fresh and delivered in good condition."
+    },
+    {
+      "customerEmail": "customer@greenmart.demo",
+      "productName": "Organic Carrots",
+      "rating": 4,
+      "comment": "Good quality carrots with nice crunch."
+    }
+  ]
+}
