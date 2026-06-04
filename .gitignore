@@ -37,3 +37,6 @@ release.properties
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Local Spring profile with private credentials
+src/main/resources/application-local.properties
